@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body{
+    line-height: 1.6;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+        img{
+            display: block;
+            height: auto;
+            width: 100%;
+        }
+}
+
+.wrapper{
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header,
+.q-content,
+.submit,
+.results{
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-flex-container,
+.header-content,
+.question,
+.q-content,
+.submit,
+.results-flex-container{
+    display: flex;
+}
+
+.q-content,
+.submit,
+.results,
+.results-flex-container{
+    justify-content: center;
+    align-items: center;
+}
+
+h1,
+.question,
+.submit,
+.random-country{
+    font-size: 95px;
+    color: white;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.q-content,
+.random-country{
+    font-weight: bold;
+}
+
+.header-flex-container,
+.results-flex-container{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.25);
+}
+
+button{
+    background: rgba(255,255,255,0.5);
+    border: none;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+

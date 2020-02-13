@@ -1,0 +1,31 @@
+header{
+    background-image: url(../assets/start.jpg);
+    background-attachment: fixed;
+        .header-flex-container{
+            justify-content: space-between;
+            padding: 20px 0 35px;
+            height: 100vh;
+                .header-content{
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-end;   
+                    text-align: right;
+                    color: white;
+                    font-size: 24px;
+                        h1{
+                            font-size: 95px;
+                            letter-spacing: 10px;
+                            text-shadow: -1px 1px 0 lightgrey, 1px 1px 0 lightgrey, 1px -1px 0 lightgrey, -1px -1px 0 lightgrey;
+                        }
+                        p{
+                            width: 80%;
+                            line-height: 1.6;
+                        }
+                }
+        }
+    
+}
+
+// .skip{
+//     position: fixed;
+// }

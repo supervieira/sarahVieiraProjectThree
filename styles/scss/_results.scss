@@ -1,0 +1,29 @@
+.submit{
+    background-image: url(../assets/globe.jpg);
+        button{
+            height: 110px;
+            font-size: 40px;
+            letter-spacing: 12px;
+            padding: 0 15%;
+            background:rgba(0,0,0,0.70);
+            color:white;
+            margin: 0;
+        }
+}
+
+.results{
+    display: none;
+        .results-flex-container{
+            text-align: center;
+            flex-direction: column;
+                .random-country{
+                    color: white;
+                }
+                button{
+                    margin: 25px auto;
+                }
+                .restart{
+                    margin-top: 0;
+                }
+        }
+}

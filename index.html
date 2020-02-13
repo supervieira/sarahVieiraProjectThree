@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Country Generator - Youtube Tutorial</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+
+
+<body>
+    
+    <header>
+        <div class="header-flex-container">
+            <div class="header-content wrapper">
+                <h1>where to?</h1>
+                <p>Welcome to the beginning of your next journey! Choose your preference out of the two options provided for each screen below. Using your results, TrekRoulette will decide your next travel desination! Don't worry, if you have something else in mind, you can ask TrekRoulette for another trip. Bon voyage! </p>
+                <button class="start">let's get started</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <form class="questions">
+            <div class="question question1">
+                <!-- QUESTION 1 -->
+                <div class="q-content hot-div">
+                    <input type="radio" id="q1-hot" name="question1" value="hot">
+                    <label for="q1-hot" class="label1">Hot</label>
+                </div>
+
+                <div class="q-content cold-div">
+                    <input type="radio" id="q1-cold" name="question1" value="cold">
+                    <label for="q1-cold" class="label1">Cold</label>
+                </div>
+            </div>
+    
+            <div class="question question2">
+                <!-- QUESTION 2 -->
+                <div class="q-content city-div">
+                    <input type="radio" id="q2-city" name="question2" value="city">
+                    <label for="q2-city" class="label2">City</label>
+                </div>
+
+                <div class="q-content nature-div">
+                    <input type="radio" id="q2-nature" name="question2" value="nature">
+                    <label for="q2-nature" class="label2">Nature</label>
+                </div>
+            </div>
+     
+            <div class="question question3">
+                <!-- QUESTION 3 -->
+                <div class="q-content budget-div">
+                    <input type="radio" id="q3-budget" name="question3" value="budget">
+                    <label for="q3-budget" class="label3">Budget</label>
+                </div>
+
+                <div class="q-content luxury-div">
+                    <input type="radio" id="q3-luxury" name="question3" value="luxury">
+                    <label for="q3-luxury" class="label3">Luxury</label>
+                </div>
+            </div>
+
+            <div class="submit">
+                <button type="submit" id="submit-btn" class="submitBtn">spin the globe</button>
+            </div>
+        </form>
+
+        <div class="results">
+            <div class="results-flex-container">
+                <div id="random-country" class="random-country wrapper"></div>
+                <button id="generate" class="generate">find another holiday</button>
+                <button id="restart" class="restart">restart</button>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+<!-- Stretch goals: re-add skip button -->

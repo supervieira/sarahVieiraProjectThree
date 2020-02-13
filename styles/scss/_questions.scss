@@ -1,0 +1,36 @@
+.questions{
+    .question{
+        input{
+            // visibility: hidden;
+            display:none;
+        }
+        .q-content{
+            width: 50%;
+                label{
+                    transition: all 0.5s ease;
+                    padding: 10px 30px;
+                }
+        }
+        .hot-div{
+            background-image: url(../assets/hot.jpg);
+        }
+        .cold-div{
+            background-image: url(../assets/cold.jpg);
+                label{
+                    color: rgba(128,128,128,0.75);
+                }
+        }
+        .city-div{
+            background-image: url(../assets/city.jpg);
+        }
+        .nature-div{
+            background-image: url(../assets/nature.jpg);
+        }
+        .budget-div{
+            background-image: url(../assets/budget.jpg);
+        }
+        .luxury-div{
+            background-image: url(../assets/luxury.jpg);
+        }
+    }
+}
