@@ -27,3 +27,27 @@
                 }
         }
 }
+
+@media(max-width: 765px){
+    .submit{
+        button{
+            padding: 0 5%;
+        }
+    }
+}
+
+@media(max-width: 650px){
+    .submit{
+        button{
+            font-size: 5vw;
+        }
+    }
+}
+
+@media(max-width: 450px){
+    .submit{
+        button{
+            letter-spacing: 8px;
+        }
+    }
+}

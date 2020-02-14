@@ -1,14 +1,14 @@
 .questions{
     .question{
         input{
-            // visibility: hidden;
-            display:none;
+            // opacity: 0;
+            display: none;
         }
         .q-content{
             width: 50%;
                 label{
                     transition: all 0.5s ease;
-                    padding: 10px 30px;
+                    padding: 0 2vw;
                 }
         }
         .hot-div{
@@ -31,6 +31,20 @@
         }
         .luxury-div{
             background-image: url(../assets/luxury.jpg);
+        }
+    }
+}
+
+@media(max-width: 600px){
+    .questions{
+        .question{
+            display: block;
+            .q-content{
+                width: 100%;
+                height: 50vh;
+                font-size: 12vw;
+                background-position: left;
+            }
         }
     }
 }

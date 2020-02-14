@@ -13,7 +13,6 @@ header{
                     color: white;
                     font-size: 24px;
                         h1{
-                            font-size: 95px;
                             letter-spacing: 10px;
                             text-shadow: -1px 1px 0 lightgrey, 1px 1px 0 lightgrey, 1px -1px 0 lightgrey, -1px -1px 0 lightgrey;
                         }
@@ -26,6 +25,35 @@ header{
     
 }
 
-// .skip{
-//     position: fixed;
-// }
+@media(max-width: 765px){
+    header{
+        .header-flex-container{
+            background: rgba(0, 0, 0, 0.50);
+            text-align: center;
+            align-items: center;
+            .header-content{
+                text-align: center;
+                display: block;
+                h1{
+                    font-size: 9.5vw;
+                }
+                p{
+                    font-weight: 20px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 600px){
+    header{
+        .header-flex-container{
+            .header-content{
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

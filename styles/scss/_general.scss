@@ -54,7 +54,7 @@ h1,
 .question,
 .submit,
 .random-country{
-    font-size: 95px;
+    font-size: 8vw;
     color: white;
     letter-spacing: 10px;
     text-transform: uppercase;
@@ -76,12 +76,17 @@ h1,
 button{
     background: rgba(255,255,255,0.5);
     border: none;
-    padding: 15px 35px;
+    padding: 1vw 1.6vw;
     text-transform: uppercase;
     letter-spacing: 5px;
-    border-radius: 10px;
+    border-radius: 4px;
     font-size: 20px;
     font-weight: bold;
     margin-top: 20px;
 }
 
+@media(max-width: 450px){
+    button{
+        letter-spacing: 3px;
+    }
+}
