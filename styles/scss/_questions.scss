@@ -34,6 +34,16 @@
     }
 }
 
+@media(max-width: 765px){
+    .questions{
+        .question{
+            .qContent{
+                font-size: 7vw;
+            }
+        }
+    }
+}
+
 @media(max-width: 600px){
     .questions{
         .question{
@@ -47,3 +57,4 @@
         }
     }
 }
+
