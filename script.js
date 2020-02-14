@@ -1,13 +1,3 @@
-// Questions for HelpCue:
-// If I delete one assets picture, background pictures are unavailable :( - not sure why. Which assets folder should be deleted?
-// Accessibility - how to tab through page
-// Final screen glitches a bit when you click 'generate' button and line # changes
-// Favicon
-// Classes --> Do HTML classes need to be camelCase as well as JS?? Right now, HTML are kebab and JS and camel
-// Should I delete all of my comments???
-// Won't let me push changes to GitHub --> fixed refresh function for restart button
-
-
 const countries = {
     hot:[
         // Hot, city, budget
@@ -182,7 +172,7 @@ $(function () {
     let resultOptions = [];
     let resultPhotos = [];
 
-    // Scroll to first question when "start" button is clicked
+    // Create an event listener that will trigger slow scroll to first question when "start" button is clicked
     $('.start').click(function () {
         $('html,body').animate({
             scrollTop: $(".questions").offset().top
@@ -190,7 +180,7 @@ $(function () {
             'slow');
     });
 
-    // Scroll to next question when each answer is clicked:
+    // Create an event listener that will trigger slow scroll to next question when each answer is clicked
     for(let i = 1; i <= 3; i++){
         if(i <=2 ){
             $(`.label${i}`).click(function () {
@@ -219,7 +209,7 @@ $(function () {
     $('.submitBtn').on('click', function (event) {
         event.preventDefault();
 
-        // Obtain user input
+        // Goal: obtain user input
         // (1) Store user's answer in a variable
         // (2) Obtain "checked" radio option from each question
         // Recall: radio buttons are grouped by name - select input by name
@@ -240,40 +230,36 @@ $(function () {
             userChoice[index].cost === userSelectedCost)
             {
                 resultOptions.push(userChoice[index].country);
-                // This will add the name of the country to our array, if it's environment property corresponds with the user input
+                // This will add the name of the country to our resultsObject array if its environment property AND cost property corresponds with the user input
 
                 resultPhotos.push(userChoice[index].url);
+                // This will add the photo of the country to our resultsPhotos array if its environment property AND cost property corresponds with the user input
             }
-            // Result: we have a newly formed array (resultOptions) that contains all of the countries in our original array that pertain to the user's preferences!!
+            // Result: we have two newly formed arrays (resultOptions and resultPhotos) that contain all of the countries (and photos of) in our original array that pertain to the user's preferences
         }
 
-        // Make our '.result' section visible
+        // Make our '.results' section in our HTML visible on our page
         $('.results').css('display', 'flex')
 
+        // Trigger page to scroll down to '.results' section when submit button is clicked
         $('html,body').animate({
             scrollTop: $(".results").offset().top
         },
             'slow');
 
-        // Print to the results section: target our HTML '.results' div
-        // Create a random generator to run through our newly created resultOptions array (See function getRandom() at top of page)
-        
+        // Print to the results section: target our HTML '.results' div        
         // Use the return value from our getRandom() to print
         const randomIndex = getRandom(resultOptions.length);
-        
-        // Add results to a new h2 tag in .results div in our HTML
-        // Add .choice class (see CSS file) to our h2 for styling
-        $('.random-country').html(`${resultOptions[randomIndex]}`);
-        // $('.results').css("background-image:","url(" + resultPhotos[randomIndex] + ")");
         const source = `url(${resultPhotos[randomIndex]})`;
         
+        $('.random-country').html(`${resultOptions[randomIndex]}`);        
         $('.results').css({
             'backgroundImage': source
         })        
     });
 
 
-    // When 'generate' button is clicked, loop through our filtered resultOptions array to provide a different answer
+    // When 'generate' button is clicked, loop through our filtered arrays to provide a different answer
     $('.generate').on('click', function () {
         const resultCity = $('.random-country').text();
         const indexOf = resultOptions.indexOf(resultCity);
@@ -304,5 +290,4 @@ $(function () {
     });
 });
 
-// image optimizer
-// https://imagecompressor.com/
+// Image sources are found in .txt document
