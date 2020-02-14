@@ -188,6 +188,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 html,
 body {
+  width: 100vw;
   line-height: 1.6;
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -348,7 +349,9 @@ header .headerFlexContainer .headerContent p {
 }
 
 .questions .question input {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  padding: 10vw;
 }
 
 .questions .question .qContent {
@@ -358,7 +361,7 @@ header .headerFlexContainer .headerContent p {
 .questions .question .qContent label {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  padding: 0 2vw 0 3.5vw;
+  padding: 0 2vw 0 3vw;
 }
 
 .questions .question .hotDiv {
@@ -475,16 +478,14 @@ button:focus {
   background: rgba(0, 0, 0, 0.5);
 }
 
-label:hover,
-input:hover,
-label:focus {
+input:hover + label,
+input:focus + label {
   -webkit-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
           box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
-.coldDiv label:hover,
-.coldDiv input:hover,
-.coldDiv label:focus {
+.coldDiv input:hover + label,
+.coldDiv input:focus + label {
   -webkit-box-shadow: inset 0 0 0 5px rgba(128, 128, 128, 0.5);
           box-shadow: inset 0 0 0 5px rgba(128, 128, 128, 0.5);
 }

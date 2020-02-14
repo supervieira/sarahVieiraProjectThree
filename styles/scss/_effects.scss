@@ -10,15 +10,13 @@ button:focus{
     background: rgba(0,0,0,0.50);
 }
 
-label:hover,
-input:hover,
-label:focus{
+input:hover + label,
+input:focus + label{
     box-shadow: inset 0 0 0 5px rgba(255,255,255,0.5);
 }
 
-.coldDiv label:hover,
-.coldDiv input:hover,
-.coldDiv label:focus{
+.coldDiv input:hover + label,
+.coldDiv input:focus + label{
     box-shadow: inset 0 0 0 5px rgba(128, 128, 128, 0.5);
 }
 

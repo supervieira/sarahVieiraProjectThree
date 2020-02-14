@@ -183,14 +183,14 @@ $(function () {
     // Create an event listener that will trigger slow scroll to next question when each answer is clicked
     for(let i = 1; i <= 3; i++){
         if(i <=2 ){
-            $(`.label${i}`).click(function () {
+            $(`.input${i}`).click(function () {
                 $('html,body').animate({
                     scrollTop: $(`.question${i+1}`).offset().top
                 },
                     'slow');
             });
         } else{
-            $(`.label${i}`).click(function () {
+            $(`.input${i}`).click(function () {
                 $('html,body').animate({
                     scrollTop: $(`.submit`).offset().top
                 },
