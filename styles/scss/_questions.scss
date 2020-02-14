@@ -1,14 +1,13 @@
 .questions{
     .question{
         input{
-            // opacity: 0;
             display: none;
         }
         .qContent{
             width: 50%;
                 label{
                     transition: all 0.5s ease;
-                    padding: 0 2vw;
+                    padding: 0 2vw 0 3.5vw;
                 }
         }
         .hotDiv{

@@ -214,6 +214,7 @@ header,
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .headerFlexContainer,
@@ -357,7 +358,7 @@ header .headerFlexContainer .headerContent p {
 .questions .question .qContent label {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  padding: 0 2vw;
+  padding: 0 2vw 0 3.5vw;
 }
 
 .questions .question .hotDiv {
@@ -469,14 +470,14 @@ button:focus {
 }
 
 label:hover,
-input:focus,
+input:hover,
 label:focus {
   -webkit-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
           box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
 .coldDiv label:hover,
-.coldDiv input:focus,
+.coldDiv input:hover,
 .coldDiv label:focus {
   -webkit-box-shadow: inset 0 0 0 5px rgba(128, 128, 128, 0.5);
           box-shadow: inset 0 0 0 5px rgba(128, 128, 128, 0.5);
