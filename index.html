@@ -15,8 +15,8 @@
 <body>
     
     <header>
-        <div class="header-flex-container">
-            <div class="header-content wrapper">
+        <div class="headerFlexContainer">
+            <div class="headerContent wrapper">
                 <h1>where to?</h1>
                 <p>Welcome to the beginning of your next journey! Choose your preference out of the two options provided for each screen below. Using your results, TrekRoulette will decide your next travel desination! Don't worry, if you have something else in mind, you can ask TrekRoulette for another trip. Bon voyage! </p>
                 <button class="start">let's get started</button>
@@ -28,51 +28,51 @@
         <form class="questions">
             <div class="question question1">
                 <!-- QUESTION 1 -->
-                <div class="q-content hot-div">
-                    <input type="radio" id="q1-hot" name="question1" value="hot">
-                    <label tabindex="0" for="q1-hot" class="label1">Hot</label>
+                <div class="qContent hotDiv">
+                    <input type="radio" id="q1Hot" name="question1" value="hot">
+                    <label tabindex="0" for="q1Hot" class="label1">Hot</label>
                 </div>
 
-                <div class="q-content cold-div">
-                    <input type="radio" id="q1-cold" name="question1" value="cold">
-                    <label tabindex="0" for="q1-cold" class="label1">Cold</label>
+                <div class="qContent coldDiv">
+                    <input type="radio" id="q1Cold" name="question1" value="cold">
+                    <label tabindex="0" for="q1Cold" class="label1">Cold</label>
                 </div>
             </div>
     
             <div class="question question2">
                 <!-- QUESTION 2 -->
-                <div class="q-content city-div">
-                    <input type="radio" id="q2-city" name="question2" value="city">
-                    <label tabindex="0" for="q2-city" class="label2">City</label>
+                <div class="qContent cityDiv">
+                    <input type="radio" id="q2City" name="question2" value="city">
+                    <label tabindex="0" for="q2City" class="label2">City</label>
                 </div>
 
-                <div class="q-content nature-div">
-                    <input type="radio" id="q2-nature" name="question2" value="nature">
-                    <label tabindex="0" for="q2-nature" class="label2">Nature</label>
+                <div class="qContent natureDiv">
+                    <input type="radio" id="q2Nature" name="question2" value="nature">
+                    <label tabindex="0" for="q2Nature" class="label2">Nature</label>
                 </div>
             </div>
      
             <div class="question question3">
                 <!-- QUESTION 3 -->
-                <div class="q-content budget-div">
-                    <input type="radio" id="q3-budget" name="question3" value="budget">
-                    <label tabindex="0" for="q3-budget" class="label3">Budget</label>
+                <div class="qContent budgetDiv">
+                    <input type="radio" id="q3Budget" name="question3" value="budget">
+                    <label tabindex="0" for="q3Budget" class="label3">Budget</label>
                 </div>
 
-                <div class="q-content luxury-div">
-                    <input type="radio" id="q3-luxury" name="question3" value="luxury">
-                    <label tabindex="0" for="q3-luxury" class="label3">Luxury</label>
+                <div class="qContent luxuryDiv">
+                    <input type="radio" id="q3Luxury" name="question3" value="luxury">
+                    <label tabindex="0" for="q3Luxury" class="label3">Luxury</label>
                 </div>
             </div>
 
             <div class="submit">
-                <button type="submit" id="submit-btn" class="submitBtn">spin the globe</button>
+                <button type="submit" id="submitBtn" class="submitBtn">spin the globe</button>
             </div>
         </form>
 
         <div class="results">
-            <div class="results-flex-container">
-                <div id="random-country" class="random-country wrapper"></div>
+            <div class="resultsFlexContainer">
+                <div id="randomCountry" class="randomCountry wrapper"></div>
                 <button id="generate" class="generate">find another holiday</button>
                 <button id="restart" class="restart">restart</button>
             </div>

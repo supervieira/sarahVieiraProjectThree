@@ -252,7 +252,7 @@ $(function () {
         const randomIndex = getRandom(resultOptions.length);
         const source = `url(${resultPhotos[randomIndex]})`;
         
-        $('.random-country').html(`${resultOptions[randomIndex]}`);        
+        $('.randomCountry').html(`${resultOptions[randomIndex]}`);        
         $('.results').css({
             'backgroundImage': source
         })        
@@ -261,11 +261,11 @@ $(function () {
 
     // When 'generate' button is clicked, loop through our filtered arrays to provide a different answer
     $('.generate').on('click', function () {
-        const resultCity = $('.random-country').text();
+        const resultCity = $('.randomCountry').text();
         const indexOf = resultOptions.indexOf(resultCity);
 
         if(indexOf === resultOptions.length - 1){
-            $('.random-country').html(`${resultOptions[0]}`);
+            $('.randomCountry').html(`${resultOptions[0]}`);
 
             const source = `url(${resultPhotos[0]})`;
 
@@ -274,7 +274,7 @@ $(function () {
             })   
         }
         else{
-            $('.random-country').html(`${resultOptions[indexOf + 1]}`);
+            $('.randomCountry').html(`${resultOptions[indexOf + 1]}`);
 
             const source = `url(${resultPhotos[indexOf + 1]})`;
 

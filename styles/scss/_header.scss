@@ -1,11 +1,11 @@
 header{
     background-image: url(../assets/start.jpg);
     background-attachment: fixed;
-        .header-flex-container{
+        .headerFlexContainer{
             justify-content: space-between;
             padding: 20px 0 35px;
             height: 100vh;
-                .header-content{
+                .headerContent{
                     flex-direction: column;
                     justify-content: center;
                     align-items: flex-end;   
@@ -27,11 +27,11 @@ header{
 
 @media(max-width: 765px){
     header{
-        .header-flex-container{
+        .headerFlexContainer{
             background: rgba(0, 0, 0, 0.50);
             text-align: center;
             align-items: center;
-            .header-content{
+            .headerContent{
                 text-align: center;
                 display: block;
                 h1{
@@ -48,8 +48,8 @@ header{
 
 @media(max-width: 600px){
     header{
-        .header-flex-container{
-            .header-content{
+        .headerFlexContainer{
+            .headerContent{
                 p{
                     font-size: 20px;
                 }
