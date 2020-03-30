@@ -261,11 +261,11 @@ h1,
 .resultsFlexContainer {
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 button {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.8);
   border: none;
   padding: 1vw 1.6vw;
   text-transform: uppercase;
@@ -334,7 +334,7 @@ header .headerFlexContainer .headerContent p {
     display: block;
   }
   header .headerFlexContainer .headerContent h1 {
-    font-size: 9.5vw;
+    font-weight: bold;
   }
   header .headerFlexContainer .headerContent p {
     font-weight: 20px;
@@ -343,8 +343,13 @@ header .headerFlexContainer .headerContent p {
 }
 
 @media (max-width: 600px) {
-  header .headerFlexContainer .headerContent p {
-    font-size: 20px;
+  header .headerFlexContainer .headerContent h1 {
+    font-size: 6vw;
+    padding: 25px 0;
+  }
+  header .headerFlexContainer .headerContent p,
+  header .headerFlexContainer .headerContent button {
+    font-size: 18px;
   }
 }
 
@@ -463,6 +468,9 @@ header .headerFlexContainer .headerContent p {
 @media (max-width: 450px) {
   .submit button {
     letter-spacing: 8px;
+  }
+  .results .resultsFlexContainer button {
+    font-size: 18px;
   }
 }
 
