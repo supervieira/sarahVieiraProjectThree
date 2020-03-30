@@ -35,7 +35,7 @@ header{
                 text-align: center;
                 display: block;
                 h1{
-                    font-size: 9.5vw;
+                    font-weight: bold;
                 }
                 p{
                     font-weight: 20px;
@@ -50,8 +50,13 @@ header{
     header{
         .headerFlexContainer{
             .headerContent{
-                p{
-                    font-size: 20px;
+                h1{
+                    font-size: 6vw;
+                    padding: 25px 0;
+                }
+                p,
+                button{
+                    font-size: 18px;
                 }
             }
         }
