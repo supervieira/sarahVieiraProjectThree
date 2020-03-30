@@ -6,6 +6,8 @@
     <title>TrekRoulette</title>
 
     <link type="image/png" href="./assets/favicon-32x32.png" rel="icon">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
@@ -16,9 +18,8 @@
     
     <header>
         <div class="headerFlexContainer">
-            <div class="headerContent wrapper">
+            <div class="headerContent wrapper" data-aos="fade-up">
                 <h1>trekroulette</h1>
-                <!-- Alternate title: TrekRoulette -->
                 <p>Welcome to the beginning of your next journey! Choose your preference out of the two options provided for each screen below. Using your results, this app will decide your next travel desination! Don't worry, if you have another holiday in mind, you can ask for another trip. Bon voyage! </p>
                 <button class="start">let's get started</button>
             </div>
@@ -31,12 +32,12 @@
                 <!-- QUESTION 1 -->
                 <div class="qContent hotDiv">
                     <input type="radio" id="q1Hot" name="question1" value="hot" class="input1">
-                    <label for="q1Hot" class="label1">Hot</label>
+                    <label for="q1Hot" class="label1" data-aos="zoom-out">Hot</label>
                 </div>
 
                 <div class="qContent coldDiv">
                     <input type="radio" id="q1Cold" name="question1" value="cold" class="input1">
-                    <label for="q1Cold" class="label1">Cold</label>
+                    <label for="q1Cold" class="label1" data-aos="zoom-out">Cold</label>
                 </div>
             </div>
     
@@ -44,12 +45,12 @@
                 <!-- QUESTION 2 -->
                 <div class="qContent cityDiv">
                     <input type="radio" id="q2City" name="question2" value="city" class="input2">
-                    <label for="q2City" class="label2">City</label>
+                    <label for="q2City" class="label2" data-aos="zoom-out">City</label>
                 </div>
 
                 <div class="qContent natureDiv">
                     <input type="radio" id="q2Nature" name="question2" value="nature" class="input2">
-                    <label for="q2Nature" class="label2">Nature</label>
+                    <label for="q2Nature" class="label2" data-aos="zoom-out">Nature</label>
                 </div>
             </div>
      
@@ -57,12 +58,12 @@
                 <!-- QUESTION 3 -->
                 <div class="qContent budgetDiv">
                     <input type="radio" id="q3Budget" name="question3" value="budget" class="input3">
-                    <label for="q3Budget" class="label3">Budget</label>
+                    <label for="q3Budget" class="label3" data-aos="zoom-out">Budget</label>
                 </div>
 
                 <div class="qContent luxuryDiv">
                     <input type="radio" id="q3Luxury" name="question3" value="luxury" class="input3">
-                    <label for="q3Luxury" class="label3">Luxury</label>
+                    <label for="q3Luxury" class="label3" data-aos="zoom-out">Luxury</label>
                 </div>
             </div>
 
@@ -80,8 +81,11 @@
         </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <p>Coded and Designed by Sarah Vieira - 2020 ©</p>
+    </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     <script src="./script.js"></script>

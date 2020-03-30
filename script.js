@@ -1,3 +1,5 @@
+AOS.init();
+
 const countries = {
     hot:[
         // Hot, city, budget
